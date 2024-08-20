@@ -16,7 +16,7 @@ function changeContent(className) {
     }
 }
 
-changeContent('search-result-form-content');
+// changeContent('search-result-form-content');
 
 document.querySelector('#new-reservation').addEventListener('click', (e) => cleanData(e));
 
@@ -60,7 +60,7 @@ document.querySelectorAll('.room-type').forEach(room => {
 
 function selectRoomType(e) {
     let myTarget = undefined;
-    e.preventDefault;
+    e.preventDefault();
     if (e.target.querySelector('img') != null) {
         myTarget = e.target;
     } else {
